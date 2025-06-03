@@ -1,4 +1,26 @@
 # Open AI
+[Envoy](https://envoy.firstdraft.com/)
+
+```ruby
+POST /v1/chat/completions HTTP/1.1
+Host: api.openai.com
+Authorization: Bearer FIND_THE_OPENAI_API_KEY_IN_COURSE_SECRETS_AND_PUT_IT_HERE
+Content-Type: application/json
+
+{
+  "model": "gpt-4o",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant who talks like Shakespeare."
+    },
+    {
+      "role": "user",
+      "content": "Hello!"
+    }
+  ]
+}
+```
 
 [ruby-openai](https://github.com/alexrudall/ruby-openai?tab=readme-ov-file#gem-install)
 
