@@ -35,6 +35,7 @@ require "dotenv/load"
 
 client = OpenAI::Client.new(access_token: ENV.fetch("OPENAI_API_KEY"))
 
+
 # Prepare an Array of previous messages
 message_list = [
   {
@@ -57,10 +58,14 @@ api_response = client.chat(
 
 pp api_response
 ```
+
+[API call](https://github.com/alexrudall/ruby-openai?tab=readme-ov-file#chat)
+
 ## TODO:
 
-- Prints “Hello! How can I help you today?”
+- Prints "Assistant: Hello! How can I help you today?"
 - Prints a line of fifty "-".
+- print "You: ".
 - Waits for the user to type in a request.
 - Sends the request to the Chat Completions endpoint and prints the response.
 - Prints a line of fifty "-".
