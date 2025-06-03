@@ -24,7 +24,8 @@ Content-Type: application/json
 
 [ruby-openai](https://github.com/alexrudall/ruby-openai?tab=readme-ov-file#gem-install)
 
-Install gem, store key in the `.env`
+- Install gem, add "require"
+- Store key **OPENAI_API_KEY** in the `.env`
 
 [secrets](https://learn.firstdraft.com/runs/133/learner/secrets)
 
